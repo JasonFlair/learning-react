@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import logo from './logo192.png'
 
-function App() {
+export function Header() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header className='header'>
+      <nav className='nav'>
+        <img className='nav-logo' src={logo} alt='react logo'/>
+        <ul className='nav-items'>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 
-export default App;
+export function List () {
+  return(
+    <>
+    <h1>reasons to learn react</h1>
+    <ol>
+      <li>It is a popular and amazing library</li>
+      <li>It makes development of your frontend more efficient</li>
+    </ol>
+    </>
+
+  )
+}
+
+export function Footer () {
+  return (
+    <footer className='footer'>
+      <small>Jason Flair. All rights reserved</small>
+    </footer>
+  )
+}
+
+

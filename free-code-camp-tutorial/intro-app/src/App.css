@@ -6,6 +6,36 @@
   height: 40vmin;
   pointer-events: none;
 }
+.header {
+  border-bottom: solid grey 1px;
+  width: 100%;
+
+}
+.nav {
+  display: flex;
+}
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav-items li {
+  padding: 10px;
+}
+
+.nav-logo {
+  width: 50px;
+}
+
+
+.footer {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
