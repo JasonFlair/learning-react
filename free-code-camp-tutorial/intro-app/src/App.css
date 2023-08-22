@@ -11,8 +11,27 @@
   width: 100%;
 
 }
+.react-items {
+  display: flex;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-items h3 {
+  font-weight: 700;
+}
+
+.nav h4 {
+  font-weight: 400;
+}
+
 .nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #21222A;
+  padding: 20px 15px;
 }
 .nav-items {
   list-style: none;
@@ -23,18 +42,42 @@
   padding: 10px;
 }
 
+.main-section {
+  padding: 20px 80px;
+}
+
+.main-facts {
+  margin-top: 50px;
+}
+.main-section ul {
+  list-style: none; /* Remove default bullet points */
+}
+
+/* Style the custom bullet points */
+.main-section ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: cyan; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
 .nav-logo {
   width: 50px;
+  padding: 10px;
 }
 
 
 .footer {
-  background-color: grey;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: auto;
+  color: white;
+  bottom: 0;
+  position: absolute;
 }
 
 @media (prefers-reduced-motion: no-preference) {
