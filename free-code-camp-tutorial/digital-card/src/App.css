@@ -35,6 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
 }
 
 .card-container {
@@ -45,6 +46,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
 .image {
@@ -55,6 +57,29 @@
   color: white;
   padding: 0px 20px;
   text-align: center;
+  margin-top: 180px;
+}
+
+.about {
+  padding: 10px;
+}
+
+.about-header {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.about-info {
+  margin-top: 0;
+  font-size: 13px;
+}
+
+.contact button {
+  width: 85px;
+  height: 25px;
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
 }
 
 .occupation {
