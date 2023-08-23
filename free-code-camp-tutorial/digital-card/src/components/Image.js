@@ -1,5 +1,5 @@
 import '../App.css';
-import image from './logo192.png'
+import image from './Laura_Smith1.png'
 
 function Image() {
   return (

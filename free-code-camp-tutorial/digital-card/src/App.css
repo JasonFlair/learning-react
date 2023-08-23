@@ -31,7 +31,7 @@
 .container {
   height: 600px;
   width: 400px;
-  background-color: grey;
+  background-color: rgb(24, 24, 24);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,14 +50,18 @@
 }
 
 .image {
-  top: 22px;
+  top: 25px;
+  width: 250px;
+  height: 190px;
   position: absolute;
+  border-radius: 10px 10px 0px 0px;
+
 }
 .profile {
   color: white;
   padding: 0px 20px;
   text-align: center;
-  margin-top: 180px;
+  margin-top: 200px;
 }
 
 .about {
@@ -80,6 +84,19 @@
   border: none;
   margin: 5px;
   border-radius: 5px;
+}
+
+.contact button:hover {
+  cursor: pointer;
+}
+
+.contact button:active {
+  scale: 0.98;
+}
+
+.linkedin-button {
+  color: white;
+  background-color: rgb(37, 142, 177);
 }
 
 .occupation {
