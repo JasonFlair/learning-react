@@ -20,6 +20,7 @@ export default function App() {
     return (
         <div>
             <Navbar />
+            <Hero />
             <Card 
                 img="katie-zaferes.png"
                 rating="5.0"
