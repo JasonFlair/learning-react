@@ -8,12 +8,8 @@ import data from "./data"
 export default function App() {
     const cards = data.map((card) => {
         return <Card 
-            img={card.coverImg}
-            rating={card.rating}
-            reviewCount={card.reviewCount}
-            location={card.location}
-            title={card.title}
-            price={card.price}
+            key={card.id}
+            {...card}
         />
     });
     
@@ -21,7 +17,9 @@ export default function App() {
         <div>
             <Navbar />
             <Hero />
-            {cards}
+            <section className="cards-list">
+                {cards}
+            </section>
         </div>
     )
 }
